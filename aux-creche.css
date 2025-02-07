@@ -1,0 +1,342 @@
+:root {
+    --background-color: white;
+    --label-color: #87BD26;
+    --input-border-color: #F0F1DE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* GALAXY Z FOLD 5 */
+
+@media(min-width:344px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    h1 {
+        background-color: var(--label-color);
+        color: var(--background-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        height: 50px;
+        width: 345px;
+        /* Defina a largura desejada */
+        word-wrap: break-word;
+        /* Permite a quebra de linha */
+        font-size: 14px;
+    }
+
+    input,
+    select {
+        border-radius: 50px;
+        border-color: var(--input-border-color);
+    }
+
+    .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--input-border-color);
+        margin-top: 10px;
+
+    }
+
+    button {
+        border-radius: 50px;
+        border-color: var(--input-border-color);
+        background-color: #F7F8E3;
+    }
+
+    /* NOME */
+
+    .outline-tf-name {
+        position: relative;
+    }
+
+    .outline-tf-name input {
+        width: 92%;
+        padding: 16px 12px;
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+    .outline-tf-name label {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        background: white;
+        padding: 0 4px;
+        color: black;
+        transition: top 0.3s, font-size 0.3s;
+    }
+
+    .outline-tf-name input:focus {
+        border-color: var(--label-color);
+    }
+
+    .outline-tf-name input:focus+label,
+    .outline-tf-name input:not(:placeholder-shown)+label {
+        top: 0;
+        font-size: 12px;
+        color: var(--label-color);
+    }
+
+
+
+    /* DATA DE NASCIMENTO, INÍCIO E FIM */
+
+    .outline-dtpicker {
+        position: relative;
+    }
+
+    .outline-dtpicker input {
+        width: 92%;
+        padding: 16px 12px;
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+    .outline-dtpicker label {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        background: white;
+        padding: 0 4px;
+        color: black;
+        transition: top 0.3s, font-size 0.3s;
+    }
+
+    .outline-dtpicker input:focus {
+        border-color: var(--label-color);
+    }
+
+    .outline-dtpicker input:focus+label,
+    .outline-dtpicker input:not(:placeholder-shown)+label {
+        top: 0;
+        font-size: 12px;
+        color: var(--label-color);
+    }
+
+    /* MESES */
+
+    .outline-mes-requerimento {
+        position: relative;
+        bottom: 20px;
+        margin: 20px 0;
+    }
+
+    .outline-mes-requerimento select {
+        width: 100%;
+        padding: 16px 12px;
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+    .outline-mes-requerimento label {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        background: white;
+        padding: 0 4px;
+        color: black;
+        transition: top 0.3s, font-size 0.3s;
+    }
+
+    .outline-mes-requerimento select:focus {
+        border-color: var(--label-color);
+    }
+
+    .outline-mes-requerimento select:focus+label,
+    .outline-mes-requerimento select:not(:placeholder-shown)+label {
+        top: 0;
+        font-size: 12px;
+        color: var(--label-color);
+    }
+
+
+    /* PCD E PCD PERMANENTE*/
+
+    .outline-pcd,
+    .outline-pcd-perm {
+        position: relative;
+        bottom: 50px;
+        margin: 20px 0;
+    }
+
+    .outline-pcd select,
+    .outline-pcd-perm select {
+        width: 100%;
+        padding: 16px 12px;
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+    .outline-pcd label,
+    .outline-pcd-perm label {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        background: white;
+        padding: 0 4px;
+        color: black;
+        transition: top 0.3s, font-size 0.3s;
+    }
+
+    .outline-pcd select:focus,
+    .outline-pcd-perm select:focus {
+        border-color: var(--label-color);
+    }
+
+    .outline-pcd select:focus+label,
+    .outline-pcd select:not(:placeholder-shown)+label,
+    .outline-pcd-perm select:focus+label,
+    .outline-pcd-perm select:not(:placeholder-shown)+label {
+        top: 0;
+        font-size: 12px;
+        color: var(--label-color);
+    }
+
+    /* DATAS DE INÍCIO E FIM */
+
+    .outline-dtInicio,
+    .outline-dtFim {
+        position: relative;
+        transform: translateY(-65px);
+        /* Move os campos para cima */
+    }
+
+    .outline-dtInicio input,
+    .outline-dtFim input {
+        width: 92%;
+        padding: 16px 12px;
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+    .outline-dtInicio label,
+    .outline-dtFim label {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        background: white;
+        padding: 0 4px;
+        color: black;
+        transition: top 0.3s, font-size 0.3s;
+    }
+
+    .outline-dtInicio input:focus,
+    .outline-dtFim input:focus {
+        border-color: var(--label-color);
+    }
+
+    .outline-dtInicio input:focus+label,
+    .outline-dtFim input:focus+label,
+    .outline-dtInicio input:not(:placeholder-shown)+label,
+    .outline-dtFim input:not(:placeholder-shown)+label {
+        top: 0;
+        font-size: 12px;
+        color: var(--label-color);
+    }
+
+    /* ENVIAR */
+
+    .button-container {
+        position: relative;
+        bottom: 65px;
+    }
+
+    .button-container button {
+        cursor: pointer;
+    }
+}
+
+/* IPHONE SE */
+@media(min-width:375px) {
+    h1 {
+        width: 360px;
+    }
+}
+
+/* IPHONE 12 PRO */
+
+@media(min-width:390px) {
+    h1 {
+        width: 375px;
+    }
+}
+
+/* IPHONE XR */
+
+@media(min-width:414px) {
+    h1 {
+        width: 399px;
+    }
+}
+
+/* PIXEL 7 */
+@media(min-width:412px) {
+    h1 {
+        width: 395px;
+    }
+}
+
+/* IPHONE 14 PRO MAX */
+
+@media(min-width:430px) {
+    h1 {
+        width: 415px;
+    }
+}
+
+/* SURFACE DUO */
+@media(min-width:540px) {
+
+    .outline-tf-name input,
+    .outline-dtpicker input,
+    .outline-dtInicio input,
+    .outline-dtFim input {
+        width: 96%;
+    }
+}
+
+/* IPAD MINI */
+@media(min-width:768px) {
+
+    .outline-tf-name input,
+    .outline-dtpicker input,
+    .outline-dtInicio input,
+    .outline-dtFim input {
+        width: 96%;
+    }
+}
+
+/* IPAD PRO */
+@media(min-width:912px) {
+    .outline-tf-name input,
+    .outline-dtpicker input,
+    .outline-dtInicio input,
+    .outline-dtFim input {
+        width: 98%;
+    }
+}

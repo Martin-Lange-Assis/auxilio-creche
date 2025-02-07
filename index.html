@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aux-creche.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <header>
+            <h1>Calculadora de Data Início e Fim do Auxílio-Creche</h1>
+        </header>
+        <div class="outline-tf-name">
+            <input type="text" id="nomeDependente" name="nome" placeholder=" " >
+            <label for="nomeDependente" id="label-nome">Nome:</label>
+        </div>
+        <br>
+        <div class="outline-dtpicker">
+            <input type="date" id="dataNascimento" name="dataNascimento" placeholder=" ">
+            <label for="dataNascimento" id="labelDtNascimento">Data de Nascimento:</label>
+        </div>
+        <br>
+        <div class="outline-mes-requerimento">
+            <select name="meses" id="meses" placeholder=" ">
+                <option value="noneSelected" selected disabled hidden></option>
+                <option value="quatroChecked">a partir do 4° mês</option>
+                <option value="seisChecked">a partir do 6° mês</option>
+            </select>
+            <label for="meses" id="label-mes">Requer o benefício a partir de qual idade do(a)
+                dependente?</label>
+        </div>
+        <br>
+        <div class="outline-pcd">
+            <select name="pcd" id="pcd" placeholder=" ">
+                <option value="noneSelected" selected disabled hidden></option>
+                <option value="Checked">Sim</option>
+                <option value="Unchecked">Não</option>
+            </select>
+            <label for="pcd" id="label-pcd">O(a) dependente se enquadra como pessoa com deficiência?</label>
+        </div>
+        <div class="outline-pcd-perm">
+            <select name="pcd-perm" id="pcd-perm" placeholder=" ">
+                <option value="noneSelected" selected disabled hidden></option>
+                <option value="Checked">Sim</option>
+                <option value="Unchecked">Não</option>
+            </select>
+            <label for="pcd-perm" id="label-pcd-perm">O(a) dependente se enquadra como pessoa com deficiência?</label>
+        </div>
+        <br>
+        <div class="outline-dtInicio">
+            <input type="text" id="dtInicio" name="dtInicio" placeholder=" ">
+            <label for="dtInicio">Data de Início</label>
+        </div>
+        <br>
+        <div class="outline-dtFim">
+            <input type="text" id="dtFim" name="dtFim" placeholder=" ">
+            <label for="dtFim">Data de Fim</label>
+        </div>
+        <br>
+        <div class="button-container">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./auxcreche-jquery.js"></script>
+
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+
+</html>
